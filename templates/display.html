@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="yellow">
+<table border="1">
+    <tr>
+        <th>pid</th>
+        <th>pname</th>
+        <th>pcost</th>
+        <th>pmfdt</th>
+        <th>pexpdt</th>
+    </tr>
+    {% for prod in records %}
+    <tr>
+        <td>{{ prod.pid }}</td>
+        <td>{{ prod.pname|upper }}</td>
+        <td>{{ prod.pcost }}</td>
+        <td>{{ prod.pmfdt }}</td>
+        <td>{{ prod.pexpdt }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="/dbapp">Click here to insert another product</a>
+
+</body>
+</html>

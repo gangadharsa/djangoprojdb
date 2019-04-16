@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#7fff00">
+<form action="./insert" method="post">
+    {% csrf_token %}
+    Enter pid:<input type="text" name="t1"><br>
+    Enter pname:<input type="text" name="t2"><br>
+    Enter pcost:<input type="text" name="t3"><br>
+    Enter pmfdt:<input type="text" name="t4"><br>
+    Enter pexpdt:<input type="text" name="t5"><br>
+    <input type="submit" value="insert">
+</form>
+
+</body>
+</html>
